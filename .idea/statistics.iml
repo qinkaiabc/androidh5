@@ -9,5 +9,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="echarts.common" level="application" />
+    <orderEntry type="library" name="stomp" level="application" />
+    <orderEntry type="library" name="sockjs" level="application" />
   </component>
 </module>
