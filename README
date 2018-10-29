@@ -1,0 +1,15 @@
+接口地址http://m.skyrover.com.cn/air/data/topic/传感器类型    所有类型的数据都按这个地址去订阅
+log:
+温度：temp
+湿度：hum
+大气压：pa
+海拔高度：alt
+
+log:
+温度：http://m.skyrover.com.cn/air/data/topic/temp
+
+log:
+湿度：http://m.skyrover.com.cn/air/data/topic/hum
+
+log:
+大气压：http://m.skyrover.com.cn/air/data/topic/pa
