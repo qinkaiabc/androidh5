@@ -123,7 +123,8 @@
                 var sensorName = data.sensorName;
                 var unit = data.unit;
                 count++;
-                data_time.push(data.uploadTime);
+                var time = (data.uploadTime + "").split(" ");
+                data_time.push(time.length === 2 && time[1]);
                 data_value.push(data.value);
                 myChart.hideLoading();
                 myChart.setOption({
