@@ -39,8 +39,8 @@
         xAxis: [
             {
                 type: 'category',
-                boundaryGap: false,
-                data: [],
+                boundaryGap: true,
+                data: [1,2,3,4,5,6,7,8],
                 nameTextStyle: {
                     color: '#ffffff',
                     fontSize: 18
@@ -53,8 +53,8 @@
             },
             {
                 type: 'category',
-                boundaryGap: false,
-                data: [],
+                boundaryGap: ['0%', '0%'],
+                data: [1,2,3,4,5,6,7,8],
                 nameTextStyle: {
                     color: '#ffffff',
                     fontSize: 18
@@ -78,23 +78,29 @@
                 lineStyle: {
                     color: '#515559'
                 }
+            },
+            splitArea: {
+                show: true,
+                areaStyle: {
+                    color: '#122432'
+                }
             }
         },
         textStyle: {
             color: '#ffffff'
         },
-        backgroundColor: '#122432',
+        backgroundColor: '#000000',
         series: [{
             name: '温度',
             type: 'line',
-            data: []
+            data: [1,2,3,4,5,6,7,8]
         }],
         color: ['#ffffff']
 
     };
 
     myChart.setOption(option);
-    myChart.showLoading();
+    //myChart.showLoading();
     //var socket = new SockJS('http://m.skyrover.com.cn/data/ws');
     var socket = new SockJS('http://47.107.41.43:8555/data/ws');
     var stompClient = Stomp.over(socket);
